@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans-4.3.xsd"
+       xmlns:context="http://www.springframework.org/schema/context">
+
+    <!-- Component scan to detect all controllers and other components -->
+    <context:component-scan base-package="com.cafeProject.demo.controller"/>
+
+    <!-- Internal view resolver to resolve JSP views -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- Enable annotation-driven support for Spring MVC -->
+    <mvc:annotation-driven />
+
+    <!-- You can configure other beans like MessageSource, HandlerMapping, etc. as needed -->
+    
+</beans>

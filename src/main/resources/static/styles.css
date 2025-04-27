@@ -1,0 +1,126 @@
+/* Universal styling and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3e6d6; /* Light coffee background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('coffee-background.jpg'); /* Add a coffee-themed background image */
+    background-size: cover;
+    background-position: center;
+    color: #3e2a47;
+}
+
+/* Center the Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Login Content Section */
+.login-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 15px;
+    padding: 40px 50px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-content h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #3e2a47;
+}
+
+/* Input Fields Styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3e2a47;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #f9f7f1;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #4e3629; /* Dark coffee color */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Submit Button Styling */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #4e3629; /* Coffee color */
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3e2a47; /* Darker shade of coffee */
+}
+
+/* Link Styling */
+p {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+p a {
+    text-decoration: none;
+    color: #4e3629;
+    font-weight: 600;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styling */
+.error-message {
+    margin-top: 20px;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    .login-content {
+        padding: 30px 35px;
+        width: 90%;
+    }
+
+    .login-content h2 {
+        font-size: 1.5rem;
+    }
+}
